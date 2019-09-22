@@ -1,0 +1,6 @@
+cd /users/yuchenxia/desktop
+mkdir MH8811_02
+cd /users/yuchenxia/desktop/MH8811_02
+touch my\ file
+cd /users/yuchenxia/desktop
+rm -rf MH8811_02
