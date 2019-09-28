@@ -21,13 +21,13 @@ while True:
         if n == '1':
             return func1()
 
-        if n == '2':
+        elif n == '2':
             return func2()
 
-        if n == '3':
+        elif n == '3':
             return func3()
 
-        if n == 'no':
+        else:
             return exit("Thanks for using!")
 
 
