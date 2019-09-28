@@ -1,7 +1,7 @@
 while True:
     n = input('Which function you would like to use? 1,2 or 3? If no, pls enter no for exit')
 
-
+#-------------------------------------------------------------------------------#
     def func1():
         print('Hello World!')
 
@@ -16,7 +16,7 @@ while True:
         fahrenheit = celsius * 1.8 + 32
         print(fahrenheit)
 
-
+#-------------------------------------------------------------------------------#
     def users(n):
         if n == '1':
             return func1()
