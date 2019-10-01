@@ -1,5 +1,5 @@
 while True:
-    n = input('Which function you would like to use? 1,2 or 3? If no, pls enter no for exit')
+    n = input('Which function you would like to use? 1,2 or 3? If no, pls enter no for exit!')
 
 #-------------------------------------------------------------------------------#
     def func1():
