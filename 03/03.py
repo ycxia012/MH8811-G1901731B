@@ -3,7 +3,7 @@ while True:
 
 #-------------------------------------------------------------------------------#
     def func1():
-        print('Hello World!')
+        print('Hello, World!')
 
 
     def func2():
