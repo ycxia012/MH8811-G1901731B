@@ -17,7 +17,7 @@ def func3():
 
 
 while True:
-    n = input('Which function you would like to use? 1,2 or 3? If no, enter something else to exit!')
+    n = input('Which function you would like to use?\n 1 for Hello world\n 2 for greeting\n 3 for transfer the temperature\n If no, enter something else to exit!')
 
 
     def users(n):
