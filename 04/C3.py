@@ -54,8 +54,8 @@ def getFilelines(fname):
 
 data = getFilelines('data.csv')
 #print(data: max, min, average, median, range)
-print(my_max(data))
-print(my_min(data))
-print(my_average(data))
-print(my_median(data))
-print(my_range(data))
+print('Max =', my_max(data))
+print('Min =', my_min(data))
+print('Average =', my_average(data))
+print('Median =', my_median(data))
+print('Range =', my_range(data))
