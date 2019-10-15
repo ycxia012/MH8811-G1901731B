@@ -61,8 +61,6 @@ def diff_lst(d1,d2):
         return True
     v=d1[0]
     for v1 in d2:
-        if type(v) != type(v1):
-            return False
 
         if type(v) == list:
             if not diff_lst(v,v1):
@@ -76,22 +74,17 @@ def diff_lst(d1,d2):
 
 #function for comapre the dict
 def diff_dict(d1,d2):
-        for k,v in d1.items():
-            if k not in d2.keys():
-                return False
-            v1 =d2[k]
-
-        if type(v) != type(v1):
-            return False
-
-        elif type(v) == dict:    
-            if not diff_dict(v,v1):
-                return False
-
-        elif type(v) == list:
-            if not diff_lst(v,v1):
-                return False
-
+    if d1 and d2: 
+       for k in set(d1) or set(d2): 
+        if k in d1 and d2:
+            if d1[k]==d2[k]:
+                return True
+        else:
+            return False 
+    elif d1==d2:
         return True
+    else:
+        return False
+
 
 my_compare(d1,d2)
