@@ -46,14 +46,7 @@ print(d2)
 print(type(d2))
 
 #function for comparison
-def my_compare(d1,d2):
-    if type(d1) == type(d2):
-        if type(d1) == type([]):
-            print(diff_lst(d1,d2))
-        if type(d1) == type({}):
-            print(diff_dict(d1,d2))
-    else:
-        return False
+
 
 #function for compare the list
 def diff_lst(d1,d2):
@@ -72,19 +65,4 @@ def diff_lst(d1,d2):
 
     return True
 
-#function for comapre the dict
-def diff_dict(d1,d2):
-    if d1 and d2: 
-       for k in set(d1) or set(d2): 
-        if k in d1 and d2:
-            if d1[k]==d2[k]:
-                return True
-        else:
-            return False 
-    elif d1==d2:
-        return True
-    else:
-        return False
-
-
-my_compare(d1,d2)
+diff_lst(d1,d2)
