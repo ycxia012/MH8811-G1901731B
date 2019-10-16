@@ -1,4 +1,5 @@
 import json
+
 #function for open the file
 def op_f(filename):
     fh=open(filename)
@@ -12,7 +13,7 @@ def serialize(l):
     s=json.dumps(l)
     return s
 
- #input files       
+#input files       
 filename=input('H1-1.json,H1-2.json,H1-3.json,H1-4.json or H1-5.json?')
 
 #Load the json file
@@ -77,12 +78,13 @@ def diff_dict(d1,d2):
     if d1 != {} and d2 != {}:
        for k in set(d1) or set(d2): 
         if k in d1 and d2:
-            if d1[k]==d2[k]:
+            if d1[k] == d2[k]:
                 return True
         else:
             return False 
-    elif d1==d2:
+    elif d1 == d2:
         return True
     else:
         return False
+
 my_compare(d1,d2)
